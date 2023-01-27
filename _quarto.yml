@@ -4,15 +4,14 @@ project:
 
 title: "Mój tytuł"
 titleeng: "My title"
-degreetype: "Praca inżynierska"
+degreetype: "Praca inżynierska" #"Engineer's thesis"
 author: "Imię Nazwisko"
-major: "Geoinformacja"
+major: "Geoinformacja" #"Geoinformation"
 albumid: "000000"
 year: "2022"
 
 book:
   output-file: "imienazwisko"
-  number-sections: true
   chapters:
     - index.qmd
     #- 00-oswiadczenie.qmd
@@ -38,3 +37,4 @@ format:
     fig-width: 6.3
     fig-asp: 0.618  # 1 / phi
     fig-pos: 't'
+    number-sections: true
