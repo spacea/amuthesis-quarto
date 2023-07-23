@@ -1,7 +1,7 @@
 %% amuthesis Class for LaTeX2e.
-%% Version 0.8
+%% Version 0.9
 %% By Jakub Nowosad.
-%% 16 February 2020
+%% 22 July 2023
 %%
 %% This class file is for students
 %% in the Institute of Geoecology and Geoinformation
@@ -18,7 +18,11 @@
 %% at Monash University, Australia.
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{amuthesis}[2020/02/16 AMU Thesis Class]
+\ProvidesClass{amuthesis}[2023/07/22 AMU Thesis Class]
+
+%% MATHS
+\RequirePackage{bm,amsmath}
+\allowdisplaybreaks
 
 %% FONT
 \usepackage[T1]{fontenc}
@@ -59,7 +63,6 @@
 \captionsetup[figure]{style=italic,format=hang,singlelinecheck=true}
 \captionsetup[table]{style=italic,format=hang,singlelinecheck=true}
 
-
 %% HEADERS AND FOOTERS
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
@@ -76,10 +79,6 @@
 \fancyfoot[C]{\sf\thepage} % except the center
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}}
-
-%% MATHS
-\RequirePackage{bm,amsmath}
-\allowdisplaybreaks
 
 %% GRAPHICS
 \RequirePackage{graphicx}
@@ -179,7 +178,6 @@
 \fi%
 }
 
-
 %% \author, \title are defined in report; here are the rest of the
 %% front matter defining macros
 \def\degreetitle{Degree not specified}
@@ -209,7 +207,7 @@
     \end{center}
     \vfill
     \begin{center}
-        \textbf{\Large{\@author}}\\
+        \Large\textbf{\expandafter{\@author}}\\
         \vspace{10mm}
         \LARGE\textbf{\expandafter{\@title}}\\
         \vspace{10mm}
@@ -312,7 +310,7 @@
 \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{{#1}}}}
 \newcommand{\NormalTok}[1]{{#1}}
 
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,tabu}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \raggedbottom

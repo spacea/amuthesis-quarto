@@ -8,7 +8,7 @@ degreetype: "Praca inżynierska" #"Engineer's thesis"
 author: "Imię Nazwisko"
 major: "Geoinformacja" #"Geoinformation"
 albumid: "000000"
-year: "2022"
+year: "2023"
 
 book:
   output-file: "imienazwisko"
@@ -23,9 +23,7 @@ book:
     - 05-roz5.qmd
     - 06-roz6.qmd
 
-bibliography:
-  - thesis.bib
-  - packages.bib
+bibliography: thesis.bib, packages.bib
 
 format:
   pdf:
