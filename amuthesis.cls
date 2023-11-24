@@ -109,7 +109,7 @@
 
 %% SPACING
 \RequirePackage{setspace}
-\spacing{1.5}
+\setstretch{1.5}
 
 %% LINE AND PAGE BREAKING
 \sloppy
