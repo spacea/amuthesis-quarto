@@ -313,4 +313,6 @@
 \usepackage{longtable,booktabs,tabu}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\setkeys{Gin}{keepaspectratio}
+
 \raggedbottom
