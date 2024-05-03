@@ -4,6 +4,12 @@ project:
 
 title: "Mój tytuł"
 titleeng: "My title"
+lang: pl
+language:
+  pl:
+    crossref-fig-title: "Rycina"
+    crossref-tab-title: "Tabela"
+    crossref-sec-prefix: "Podrozdział"
 degreetype: "Praca inżynierska" #"Engineer's thesis"
 author: "Imię Nazwisko"
 major: "Geoinformacja" #"Geoinformation"
