@@ -14,7 +14,7 @@ degreetype: "Praca inżynierska" #"Engineer's thesis"
 author: "Imię Nazwisko"
 major: "Geoinformacja" #"Geoinformation"
 albumid: "000000"
-year: "2023"
+year: "2028"
 
 book:
   output-file: "imienazwisko"
