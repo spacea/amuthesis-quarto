@@ -27,6 +27,28 @@ Dzięki temu możliwa jest łatwiejsza kontrola wersji (porównywanie zmian).
 
 Rozpoczęcie nowego paragrafu polega na dodaniu jednej linii przerwy (jednej pustej linii).
 
+## Dodawanie załącznika
+
+Do pracy możliwe jest dodanie wewnętrznego załącznika (*appendiksa*). 
+W tym celu należy:
+
+1. Stworzyć nowy plik .qmd (np. appendix.qmd) a przy tytule rozdziału dodać `{.unnumbered}`.
+2. Stworzyć nowy plik .qmd (np. references.qmd) o następującej treści:
+
+```
+# Bibliografia {.unnumbered}
+
+::: {#refs}
+
+:::
+```
+
+3. Dopisać stworzone pliki do listy rozdziałów w _quarto.yml w odpowiedniej kolejności. Dopisać także do `format: pdf:` właściwość `suppress-bibliography: true`
+4. Zakomentować linię w pliku amuthesis.tex odpowiadającą za dodawanie bibliografii: `%\printbibliography[heading=bibintoc, title=Bibliografia]`
+
 ## Podziękowania
 
 Szablon opiera się o rozwiązania stworzone przez [Roba Hyndmana](https://github.com/robjhyndman/MonashThesis).
+Dziękuję Tomaszowi Matuszkowi za informacje o tym jak dodawać załączniki do pracy.
+
+
